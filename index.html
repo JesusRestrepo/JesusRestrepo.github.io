@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Corporal | IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funcion.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Calculadora corporal</h1>
+    </header>
+    <!--contenedor negro-->
+    <div class="box-1">
+        <h1>Calculadora de Índice de masa corporal (IMC)</h1>
+        <div class="calculo">
+            <!--contenedor azul-->
+            <div class="box-2">
+                <!--contenedor entrada de datos-->
+                <div class="datos">
+                    <div class="estatura">
+                        <h3 id="id3">Estatura:</h3>
+                        <input id="estatura" size="10">en Metros
+                    </div>
+                    <div class="peso">
+                        <h3>Peso:</h3>
+                        <input id="peso" size="10">en Kg
+                    </div>
+                    <!--boton enviar-->
+                    <div class="boton" id="btn">
+                        <button type="submit" onclick="imc()">Enviar</button>    
+                    </div>
+                    <!--espacio para el resultado-->
+                    <div class="result">
+                        <p id="resultado"></p>
+                    </div>
+                </div>
+                <!--separador-->
+                <div class="separar">
+                </div>
+                <!--contenedor tabla-->
+                <div class="cntn-tabla">
+                    <div class="tabla">
+                        <table>
+                            <tr> 
+                                <th>IMC</th>
+                                <th>Situación</th>
+                            </tr>
+                            <tr id="fila1">
+                                <td>Menor 18.5</td>
+                                <td>Bajo peso</td>
+                            </tr>
+                            <tr id="fila2">
+                                <td>18.5-24.9</td>
+                                <td>Peso normal</td>
+                            </tr>
+                            <tr id="fila3">
+                                <td>25-26.9</td>
+                                <td>Sobrepeso grado I</td>
+                            </tr>
+                            <tr id="fila4"> 
+                                <td>27-29.9</td>
+                                <td>Sobrepeso grado II</td>
+                            </tr>
+                            <tr id="fila5">
+                                <td>30-34.9</td>
+                                <td>Obesidad tipo I</td>
+                            </tr>
+                            <tr id="fila6">
+                                <td>35-39.9</td>
+                                <td>Obesidad tipo II</td>
+                            </tr>
+                            <tr id="fila7">
+                                <td>40-49.9</td>
+                                <td>Obesidad mórbida</td>
+                            </tr>
+                            <tr id="fila8">
+                                <td>Mayor 50</td>
+                                <td>Obesidad extrema</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="def">
+                        <p id="definicion"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="funcion.js"></script>
+</body>
+</html>
